@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Main {
+  background: rgba(0,0,0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: white;
+  height: 720px;
+  margin: 5vh;
+  
+}
+.button-down {
+  position: absolute;
+  top: 650px;
+  padding: 5px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.506);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+.button-down:hover {
+  transform: translate3d(0, 10px, 0);
+}
+.button-down::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  z-index: 11;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+
+.button-down::after {
+  top: 10px;
+  transform: rotate(225deg);
+}
+
+p{
+  font-size: 60px;
+  font-family: 'Inter', sans-serif;
+  color: #E5E5E5;
+  position: absolute;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
+}
+  
